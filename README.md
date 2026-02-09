@@ -1,16 +1,72 @@
-# React + Vite
+# Todo React Avançado
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Aplicação de **Todo List** desenvolvida com React, focada em boas práticas de arquitetura, uso de Context API, hooks customizados e otimização de performance.
 
-Currently, two official plugins are available:
+## ✨ Funcionalidades
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Adicionar novas tarefas
+- Marcar tarefas como concluídas
+- Remover tarefas
+- Filtrar tarefas:
+  - Todas
+  - Pendentes
+  - Concluídas
+- Persistência das tarefas no **localStorage**
 
-## React Compiler
+## 🛠️ Tecnologias Utilizadas
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- React
+- JavaScript (ES6+)
+- Context API
+- Hooks do React:
+  - `useState`
+  - `useEffect`
+  - `useContext`
+  - `useMemo`
+- Hook customizado (`useTodos`)
+- CSS puro (Mobile First)
+- Vite
 
-## Expanding the ESLint configuration
+## 🧠 Conceitos Aplicados
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Gerenciamento de estado global com **Context API**
+- Encapsulamento de lógica reutilizável com **hooks customizados**
+- Otimização de renderizações com **useMemo**
+- Organização do projeto por componentes
+- Persistência de dados no navegador
+
+## 📁 Estrutura de Pastas
+src/
+├── components/
+│ ├── TodosForm.jsx
+│ ├── TodosList.jsx
+│ ├── TodosFilters.jsx
+│ └── TodosItem.jsx
+├── context/
+│ └── TodoContext.jsx
+├── hooks/
+│ └── useTodos.js
+├── App.jsx
+├── App.css
+└── main.jsx
+
+## ▶️ Como Rodar o Projeto
+
+### Pré-requisitos
+- Node.js instalado
+
+### Passos
+
+```bash
+# Clonar o repositório
+git clone https://github.com/seu-usuario/todo-react-avancado.git
+
+# Entrar no projeto
+cd todo-react-avancado
+
+# Instalar dependências
+npm install
+
+# Rodar o projeto
+npm run dev
+
